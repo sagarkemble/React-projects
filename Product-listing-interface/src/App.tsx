@@ -76,7 +76,7 @@ function App() {
           <Loader />
         ) : (
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {productDetails?.data.map((p) => (
+            {productDetails?.data!.map((p) => (
               <ProductCard key={p.id} productData={p} />
             ))}
           </div>

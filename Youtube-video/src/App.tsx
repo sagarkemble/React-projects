@@ -55,7 +55,7 @@ function App() {
 
         {isLoading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8">
-            {apiResponse?.data.data.map((video) => (
+            {apiResponse?.data.data!.map((video) => (
               <VideoCard key={video.items?.id} videoData={video} />
             ))}
           </div>

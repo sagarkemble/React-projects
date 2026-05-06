@@ -64,7 +64,7 @@ function App() {
           <Loader />
         ) : (
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {mealData?.data.map((meal) => (
+            {mealData?.data!.map((meal) => (
               <MealCard key={meal.id} meal={meal} />
             ))}
           </div>

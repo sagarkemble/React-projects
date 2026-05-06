@@ -47,7 +47,7 @@ function App() {
           <Loader />
         ) : (
           <div className="space-y-6">
-            {jokeData?.data.map((joke) => (
+            {jokeData?.data!.map((joke) => (
               <JokeCard key={joke.id} joke={joke} />
             ))}
           </div>

@@ -67,7 +67,7 @@ function App() {
           <Loader />
         ) : (
           <div className="grid grid-cols-1 gap-6">
-            {quoteData?.data.map((quote) => (
+            {quoteData?.data!.map((quote) => (
               <QuoteCard key={quote.id} quote={quote} />
             ))}
           </div>
